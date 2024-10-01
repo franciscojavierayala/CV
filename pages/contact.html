@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--metadatos-->
+    <meta charset="utf-8">
+    <meta name="author" content="Francisco Javier Ayala Parejo">
+    <meta name="description" content="Portafolio de desarrollo fullstack de Francisco Javier Ayala Parejo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Java, Springboot">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Titulo-->
+    <title>Portfolio de Desarrollo | Francisco Javier Ayala Parejo</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../resources/icono.ico">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS-->
+    <link href="../styles/style.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="../scripts/nav.js"></script>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-md navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+        <button class="navbar-toggler small-device" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon small-device"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../resources/icono.png" width="50" alt="Portfolio">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Capacidades</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contacto -->
+<section id="contact" class="contacto seccion-clara">
+    <div class="contenedor">
+        <h2 class="seccion-titulo">Contacto</h2>
+        <form class="formulario-contacto needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                <div class="invalid-feedback">
+                    Por favor ingresa tu nombre.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos" required>
+                <div class="invalid-feedback">
+                    Por favor ingresa tus apellidos.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label>Género</label>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="genero-masculino" name="genero" value="masculino" required>
+                        <label class="form-check-label" for="genero-masculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="genero-femenino" name="genero" value="femenino" required>
+                        <label class="form-check-label" for="genero-femenino">Femenino</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor selecciona tu género.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
+                <div class="invalid-feedback">
+                    Por favor ingresa un correo electrónico válido.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                <div class="invalid-feedback">
+                    Por favor escribe tu mensaje.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo de Consulta</label>
+                <select class="form-select" id="motivo" required>
+                    <option value="">Selecciona un motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="solicitud">Solicitud</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <div class="invalid-feedback">
+                    Por favor selecciona un motivo de consulta.
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terminos-condiciones" required>
+                <label class="form-check-label" for="terminos-condiciones">Acepto los términos y condiciones</label>
+                <div class="invalid-feedback">
+                    Debes aceptar los términos y condiciones.
+                </div>
+            </div>
+            <div class="alert alert-danger d-none" id="form-error">
+                Por favor completa todos los campos correctamente antes de enviar el formulario.
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
+
+<!--pie de pagina(footer)-->
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="../resources/icono-blanco.png" alt="Logo del Portfolio">
+    <p class="footer-texto text-center">Aprendo y creo todos los dias.<br>Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/franciscojavierayala" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/francisco-javier-ayala-parejo/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+        </a>
+    </div>
+
+    <div class="derechos-de-autor">Creado por Francisco Javier Ayala Parejo (2024) &#169;</div>
+</footer>
+<script src="../scripts/form.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+

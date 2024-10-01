@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--metadatos-->
+  <meta charset="utf-8">
+  <meta name="author" content="Francisco Javier Ayala Parejo">
+  <meta name="description" content="Portafolio de desarrollo fullstack de Francisco Javier Ayala Parejo">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Java, Springboot">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Titulo-->
+  <title>Portfolio de Desarrollo | Francisco Javier Ayala Parejo</title>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="../resources/icono.ico">
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Iconos de bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--CSS-->
+  <link href="../styles/style.css" rel="stylesheet">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script src="../scripts/nav.js"></script>
+</head>
+<body>
+<!--Barra de navegacion-->
+<nav class="navbar navbar-expand-md navbar-light bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler small-device" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon small-device"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../resources/icono.png" width="50" alt="Portfolio">
+      </a>
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutme.html">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Capacidades</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Habilidades -->
+<section id="experiencia" class="experiencia seccion-clara">
+  <div class="container text-center">
+    <div class="row">
+      <!--FRONT-->
+      <div class="columna col-12 col-md-6">
+        <i class="bi bi-laptop"></i>
+        <p class="experiencia-titulo">Desarrollo Front-End</p>
+        <p>Como desarrollador Front-End, me especializo en crear interfaces de usuario atractivas y funcionales. Mi enfoque se centra en la implementación de diseños creativos utilizando HTML, CSS y JavaScript. Trabajo con frameworks como Bootstrap y Angular para agilizar el proceso de desarrollo y garantizar la compatibilidad con diferentes dispositivos y navegadores.</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-html">HTML</span>
+          <span class="badge text-bg-css">CSS</span>
+          <span class="badge text-bg-js">JS</span>
+          <span class="badge text-bg-bootstrap">BOOTSTRAP</span>
+          <span class="badge text-bg-angular">ANGULAR</span>
+        </div>
+      </div>
+      <!--BACK-->
+      <div class="columna col-12 col-md-6">
+        <i class="bi bi-layer-backward"></i>
+        <p class="experiencia-titulo">Desarrollo Back-End</p>
+        <p>Como desarrollador Back-End, me encargo de crear la lógica y la funcionalidad detrás de las aplicaciones web. Utilizo tecnologías como Java, Spring Boot y Python para construir sistemas robustos y escalables. Además, tengo experiencia en el diseño y la gestión de bases de datos utilizando MySQL y otras herramientas relacionadas.</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-java">JAVA</span>
+          <span class="badge text-bg-springboot">SPRINGBOOT</span>
+          <span class="badge text-bg-spring">SPRING</span>
+          <span class="badge text-bg-python">PYTHON</span>
+          <span class="badge text-bg-mysql">MYSQL</span>
+        </div>
+      </div>
+
+
+    </div>
+
+</section>
+<!--Proyectos-->
+<section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+  <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
+  <h3 class="seccion-descripcion">Algunos proyectos que he creado.</h3>
+  <!--Galeria de Proyectos-->
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+      <!-- BanditChase -->
+<div class="col-12 col-md-6 col-lg-6 text-center d-flex justify-content-center">
+  <div class="proyecto">
+    <img src="../resources/banditchase.jpg" alt="BanditChase">
+    <div class="overlay">
+      <p>Bandit Chase</p>
+      <div class="iconos-contenedor">
+        <a href="https://github.com/franciscojavierayala/BanditChase" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://github.com/franciscojavierayala/BanditChase/archive/refs/heads/main.zip" download>
+          <i class="bi bi-file-earmark-zip"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Club Nautico -->
+      <div class="col-12 col-md-6 col-lg-6 text-center d-flex justify-content-center">
+  <div class="proyecto">
+    <img src="../resources/clubnautico.jpg" alt="Club Nautico">
+    <div class="overlay">
+      <p>API Club Náutico</p>
+      <div class="iconos-contenedor">
+        <a href="https://github.com/franciscojavierayala/ClubNautico" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://github.com/franciscojavierayala/ClubNautico/archive/refs/heads/master.zip" download>
+          <i class="bi bi-file-earmark-zip"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<!-- Tabla de proyectos -->
+<div class="row mt-4">
+  <div class="col-12">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Proyecto</th>
+        <th scope="col">Fecha de Inicio</th>
+        <th scope="col">Lenguaje</th>
+        <th scope="col">Estado</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Bandit Chase</td>
+        <td>Marzo 2024</td>
+        <td>Java(Swing)</td>
+        <td>Finalizado</td>
+      </tr>
+      <tr>
+        <td>API Club Náutico</td>
+        <td>Junio 2024</td>
+        <td>Java(SpringBoot)</td>
+        <td>Finalizado</td>
+      </tr>      
+      <tr>
+        <td>¡Próximamente más!</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<!--Contacto-->
+<section id="contacto" class="contacto seccion-oscura">
+  <div class="container">
+    <div class="container text-center d-flex rectangulo justify-content-evenly">
+      <div class="row">
+        <div class="col-12 col-md-4 seccion-titulo">
+          ¿Hablamos?
+        </div>
+        <div class="col-12 col-md-4 descripcion">
+          Contactame para iniciar tu proyecto de desarrollo web.
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="contact.html">
+            <button type="button">
+              Contacto
+              <i class="bi bi-envelope-check"></i>
+            </button>
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pie de pagina(footer)-->
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+  <img class="footer-logo" src="../resources/icono-blanco.png" alt="Logo del Portfolio">
+  <p class="footer-texto text-center">Aprendo y creo todos los dias.<br>Creemos un proyecto juntos.</p>
+  <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+    <a href="https://github.com/franciscojavierayala" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/francisco-javier-ayala-parejo/" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
+
+  <div class="derechos-de-autor">Creado por Francisco Javier Ayala Parejo (2024) &#169;</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

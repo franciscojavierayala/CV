@@ -1,0 +1,452 @@
+/*Barra de navegacion*/
+
+.active-page {
+    color: #555;
+    background-color: #e9ecef;
+    pointer-events: none;
+    cursor: default;
+}
+
+.disabled-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.navbar{
+    padding: 2rem;
+    background-color:#f5f6f7 ;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Experiencia*/
+.experiencia{
+    padding: 40px 40px 60px 40px;
+
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+color: white;
+background-color: #1b1b32;
+}
+
+.badge{
+    color: white;
+    background-color: rgb(0, 75, 249);
+    margin: 5px;
+}
+
+
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+font-size: 25px;
+font-weight: bold;
+margin: 10px 0;
+
+}
+
+/*Proyectos*/
+.proyectos-recientes{
+    padding: 4px;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2 ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-top: -40px;
+}
+
+.overlay{
+    transition: all 0.2 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 0;
+}
+
+.proyecto:hover img{
+opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+}
+
+.proyecto {
+    position: relative;
+}
+/*Contacto*/
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+    
+}
+
+.contacto .rectangulo{
+
+background-color: rgb(13, 110, 253);
+border-radius: 10px;
+box-shadow: 0px 1px 4px 1px white;
+}
+.contacto .row{
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2 ease-in-out;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2 ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.contacto button:hover i {
+color: black;
+}
+/*pie de pagina*/
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    color: white;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2 ease-in;
+}
+
+.iconos-redes-sociales i{
+    color:white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i{
+color: black;
+}
+
+.derechos-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/*Adaptable (Responsive)*/
+
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 400px){
+    .overlay p {
+        font-size: 18px;
+    }
+}
+/*Estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Playfair Display", serif;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.texto-blanco{
+    color: white;
+}
+
+.texto-negro{
+    color: black;
+}
+
+/*Seccion Index*/
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-principal h2 {
+font-size: 1.5rem;
+color: #615151;
+}
+
+.hero-pfp{
+    width: 200px;
+    height: 200px;
+}
+
+/*Sobre mi*/
+.sobre-mi{
+
+    padding: 30px;
+}
+.sobre-mi .contenedor{
+    max-width: 1200px;
+    text-align: center;
+}
+/* Estilos para el nombre y currículum */
+.hero-principal {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para el nombre y currículum */
+.hero-principal {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.curriculum {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    display: inline-block;
+}
+
+.curriculum img {
+    max-width: 100%;
+    height: auto;
+}
+
+.curriculum a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 767px) {
+    .curriculum img {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .curriculum img {
+        max-width: 90%;
+    }
+}
+
+/* Colores para los badges según el lenguaje */
+.text-bg-html {
+    background-color: #e34c26;
+}
+
+.text-bg-css {
+    background-color: #2965f1;
+}
+
+.text-bg-js {
+    background-color: #f0db4f;
+}
+
+.text-bg-bootstrap {
+    background-color: #7952b3;
+}
+
+.text-bg-angular {
+    background-color: #dd0031;
+}
+
+.text-bg-java {
+    background: linear-gradient(135deg, #68b1ec, #cc3a4c);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;}
+
+.text-bg-springboot {
+    background: linear-gradient(135deg, #78c247, #e1d5d5);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.text-bg-spring {
+    background-color: #6db33f;
+}
+
+.text-bg-python {
+    background: linear-gradient(135deg, #306998, #f0db4f);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+
+.text-bg-mysql {
+    background-color: #4479a1;
+}
+/* Estilos para los nuevos campos del formulario de contacto */
+.formulario-contacto label {
+    font-weight: bold;
+}
+
+.formulario-contacto input[type="radio"],
+.formulario-contacto input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.formulario-contacto button {
+    margin-top: 10px;
+}
+
+.formulario-contacto div[class^="mb-"] {
+    margin-bottom: 15px;
+}
+
+.formulario-contacto select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+
+.formulario-contacto button {
+    background-color: #007bff;
+    color: white;
+    margin: 25px auto;
+    display: block;
+}
+
+
+
